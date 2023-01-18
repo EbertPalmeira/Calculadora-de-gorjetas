@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.calculadora {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 50px;
+  color: #3cb371;
+}
+.container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  background: #8fbc8f;
+  margin-top: 50px;
+  color: #fff;
+}
+.conta {
+  display: grid;
+}
+.precos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.precos button {
+  padding: 5px 5px;
+  border: none;
+  background: #fff;
+}
+.precos input {
+  background: #fff;
+  border: none;
+  padding: 6px 20px;
+}
+
+.total span {
+  font-size: 0.7em;
+  color: #dcdcdc;
+}
+.tipo-porcentagem {
+  padding-top: 10px;
+}
+.tipo-porcentagem p {
+  margin-bottom: 5px;
+}
+#porcentagem {
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+/* total */
+.total {
+  background: #3cb371;
+  display: grid;
+  height: 250px;
+  align-items: center;
+  color: #fff;
+}
+.conta-total p {
+  padding-bottom: 10px;
+}
+.conta-total {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.subtotal {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.calcular {
+  display: flex;
+  margin: 0 auto;
+  padding: 5px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  background: #fff;
+  color: #3cb371;
+  border: #3cb371;
+}
+.calcular:hover {
+  color: #fff;
+  background: #3cb371;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: block;
+    width: 500px;
+    padding-top: 50px;
+  }
+  .container div {
+    padding-bottom: 10px;
+  }
+  .calcular {
+    background: #3cb371;
+    color: #fff;
+    transition: 0.5s;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .calcular:hover {
+    background: #8fbc8f;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    display: block;
+    width: 350px;
+    padding-top: 50px;
+  }
+}
